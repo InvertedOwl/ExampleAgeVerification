@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+button {
+    cursor: pointer;
+}
+select {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: none;
+    height: 40px;
+    color: gray;
+}
+
+.head-bg {
+    background-image: url(/images/headbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Center the background */
+    width: 100vw;
+    height: 100vh;
+
+    animation: zoomInOut 10s infinite ease-in-out;
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        background-size: 100%;
+        background-position: center; /* Keep it centered */
+    }
+    50% {
+        background-size: 105%;
+        background-position: center; /* Keep it centered */
+    }
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: end;
+    background-color: transparent;
+}
+
+.nav-item {
+    margin: 25px;
+    height: fit-content;
+}
+
+.nav-img {
+    width: 150px;
+    filter: invert(1);
+}
+
+.nav-text {
+    position: relative;
+    bottom: 10px;
+    height: fit-content;
+    color: white;
+}
+
+
+.mid-head {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.mid-head * {
+    margin-right: 150px;
+    width: fit-content;
+    color: white;
+}
+
+.learnmore-button {
+    margin-top: 30px;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.collection {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.collection-intro {
+    margin-top: 50px;
+}
+
+.discover-button {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px 10px 20px;
+}
+
+.collection-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.collection-item {
+    width: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.collection-image {
+    width: 150px;
+}
+
+.popup-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #00000080;
+    width: 100vw;
+    height: 100vh;
+}
+
+.age-popup {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    width: 50%;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-logo {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.popup-text {
+    width: 65%;
+    text-align: center;
+}
+
+.popup-country {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
